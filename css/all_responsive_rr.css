@@ -46641,3 +46641,26 @@ span.thumb_videotext {
         position: relative;
     }
 }
+
+/*===========================
+      PHOTOSLURP STYLES
+===========================*/
+
+/*HOMEPAGE*/
+
+.heading-carousel-home {
+    text-align: center;
+}
+
+#swarovski-carousel-home {
+    margin: 48px 0 !important;
+}
+
+#swarovski-carousel-home .ps-circular.ps-theme-modern .ps-note-add-pics-submit {
+    bottom: 412px !important;
+    left: 89% !important;
+    font-family: 'Futura', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+
+}
+
+
