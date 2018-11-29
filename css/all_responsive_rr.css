@@ -46688,9 +46688,6 @@ margin: 48px 0;
 
 /*LOOKBOOK*/
 
-/*=========================
-    LOOKBOOK STYLES
-==========================*/
 
 
 #tab-heading {
@@ -46719,7 +46716,7 @@ margin: 48px 0;
 
 .tabss label {
     display: inline-grid;
-    width: 24%;
+    width: 23%;
     text-align: center;
     line-height: 2;
     cursor: pointer;
@@ -46736,11 +46733,14 @@ margin: 48px 0;
 
 .tab-style {
     color: #181818;
-    font-size: 14px;
-    font-family: 'minion-pro';
-    letter-spacing: 3.5px;
+    font-size: 15px;
+    font-family: 'FuturaLig', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    letter-spacing: 1.2px;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 400;
+    text-decoration: none;
+    line-height: 18px
+    text-align: center;
 }
 
 
