@@ -24896,7 +24896,7 @@ body:not(.user-is-tabbing) button:focus, body:not(.user-is-tabbing) input:focus,
 }
 
 .link--share .link__icon--left {
-	background-image: url(../_ui/responsive/theme-swarovski/images/icons/share_tide.svg);
+	background-image: url(../assets/img/share_tide.svg);
 }
 
 @media(max-width: 759px) {
@@ -46653,7 +46653,7 @@ span.thumb_videotext {
 }
 
 #swarovski-carousel-home {
-	margin: 48px 0 !important;
+	margin: 24px 0 !important;
 }
 
 #swarovski-carousel-home .ps-circular.ps-theme-modern .ps-note-add-pics-submit {
@@ -46663,26 +46663,14 @@ span.thumb_videotext {
 
 }
 
+
 /*--------------*/
 
 #swarovski-gallery-home {
-margin: 48px 0;
-}
-
-#swarovski-gallery-home .ps-images {
-		grid-gap: 6px !important;
-		grid-template-columns: repeat(auto-fill, calc(16.66% - 6px)) !important;
-}
-
-#swarovski-gallery-home .ps-image:nth-child(3) {
-	grid-column-end: span 2!important;
-	grid-row-end: span 2!important;
+    margin: 24px 0;
 }
 
 
-#swarovski-gallery-home .ps-load-more-container {
-	display: none !important;
-}
 
 /*LOOKBOOK*/
 
@@ -46772,7 +46760,16 @@ margin: 48px 0;
 
 .ps-load-more-button:hover {
      color: #fff !important;
-    background: #181818 !important;
+    background: #b8b7b6 !important;
 }
 
 
+.ps-product-cta {
+	height: 36px !important;
+	line-height: 36px !important;
+	top: 120% !important;
+}
+
+.ps-product-description {
+	margin-top: 64px !important;
+}

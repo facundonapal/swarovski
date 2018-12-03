@@ -1,0 +1,98 @@
+.ps-container {
+    margin: 0 1% 3rem;
+}
+
+.ps-container .ps-logo-widget-carousel {
+    display: none;
+}
+
+.ps-images {
+    grid-gap: 0 !important;
+    grid-template-columns: repeat(auto-fill, 16.66%) !important;
+}
+
+.ps-image:nth-child(3) {
+    grid-column-end: span 2;
+    grid-row-end: span 2;
+}
+
+.ps-load-more-container {
+    display: none !important;
+}
+
+.ps-image:nth-child(3) .ps-hover-overlay {
+    opacity: 1;
+    background: rgba(0, 0, 0, .3);
+}
+
+.ps-image .ps-hover-overlay {
+    display: none !important;
+}
+
+.ps-image:nth-child(3) .ps-hover-overlay {
+    display: flex !important;
+    opacity: 1;
+    background: rgba(0, 0, 0, .25);
+}
+
+.ps-image img, .ps-image:nth-child(3) img, .ps-image:nth-child(3) .ps-hover-overlay, 
+.ps-image:nth-child(3) img, .ps-image:nth-child(3) .ps-hover-overlay .ps-likes-comments:before {
+    transition: all .2s ease-in-out;
+}
+
+.ps-container:hover .ps-image:nth-child(3) img  {
+    transform: scale(1.10);
+}
+
+.ps-container:hover .ps-image img {
+    opacity: 0.9;
+}
+
+.ps-container:hover .ps-image:nth-child(3) .ps-hover-overlay .ps-likes-comments:before {
+    background-color: rgba(32, 32, 32, 0.15);    
+}
+
+.ps-image:nth-child(3) .ps-hover-overlay span {
+    display: none !important;
+}
+
+.ps-image:nth-child(3) .ps-hover-overlay .ps-thumb-avatar {
+    width: 64px !important;
+    height: 64px !important;
+}
+
+.ps-image:nth-child(3) .ps-hover-overlay .ps-likes-comments,
+.ps-image:nth-child(3) .ps-hover-overlay .ps-source-provider {
+    color: #fff;
+    font-size: 1rem;
+    opacity: 1 !important;
+    width: 100% !important;
+    margin-left: 0 !important;
+    text-align: center;
+}
+
+.ps-image:nth-child(3) .ps-hover-overlay .ps-likes-comments:before {
+    display: inline-block;
+    white-space: pre;
+    font-family: 'Apercu Light', Calibri, sans-serif;
+    font-weight: 200 !important;
+    font-style: normal;
+    font-size: 1.36em !important;
+    letter-spacing: 0.03em;
+    padding: 12% 24%;
+    color: #FFF;
+    background: radial-gradient(circle farthest-side, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4));
+    border-radius: 1%;
+    content: "LOOKBOOK";
+    width: 25%;
+}
+
+@media screen and (max-width: 425px) {
+    .ps-image:not(:nth-child(3)), .ps-gallery.ps-theme-modern .ps-img-container:after {
+        display: none !important;
+    }
+
+    .ps-image:nth-child(3) {
+        grid-column-end: span 6;
+    }
+}

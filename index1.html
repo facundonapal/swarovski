@@ -124,6 +124,8 @@ d;c.pCfg=ha;c.pCSAA=y;c.cFHFAU=ka;c.sCD=la;c.bcv=z;c.ncv=function(a){var b=t(J(a
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic"/>
 
 <link rel="stylesheet" type="text/css" media="all" href="css/all_responsive_rr.css"/>
+<link rel="stylesheet" type="text/css" media="all" href="css/ps_homepage.css"/>
+
 
         
 
@@ -321,7 +323,7 @@ d;c.pCfg=ha;c.pCSAA=y;c.cFHFAU=ka;c.sCD=la;c.bcv=z;c.ncv=function(a){var b=t(J(a
                 <div class="col-xs-4 text-center">
                     <div class="header__logo visible-xs">
                         <div class="link-wrapper ">
-                            <a class="link link--logo" href="/en_GB-GB/">
+                            <a class="link link--logo" href="index1.html">
                                 <img class="link__image" src="assets/img/brandlogo.svg" alt="Logo" title="Logo" aria-label="Logo"/>
                             </a>
                         </div>
@@ -497,7 +499,7 @@ d;c.pCfg=ha;c.pCSAA=y;c.cFHFAU=ka;c.sCD=la;c.bcv=z;c.ncv=function(a){var b=t(J(a
     <hr class="line hidden-xs"/>
     <div class="header__logo hidden-xs">
         <div class="link-wrapper ">
-            <a class="link link--logo" href="/en_GB-GB/">
+            <a class="link link--logo" href="index1.html">
                 <img class="link__image" src="assets/img/brandlogo.svg" alt="Logo" title="Logo" aria-label="Logo"/>
             </a>
         </div>
@@ -1411,7 +1413,7 @@ d;c.pCfg=ha;c.pCSAA=y;c.cFHFAU=ka;c.sCD=la;c.bcv=z;c.ncv=function(a){var b=t(J(a
     <div class="link-wrapper">
                 <span class="link link--main-nav link--primal-nav text-center text-uppercase  auto" data-text-content="Collections">
                     <span class="link__text">
-                        <a href="/en_GB-GB/c-40/Categories/Collections/" aria-haspopup="true" title="Collections">#swarovski</a></span>
+                        <a href="lookbook.html" aria-haspopup="true" title="Collections">#swarovski</a></span>
                 </span>
     </div>
 </div>  </div><div data-navigation-page="1" class="clearfix js-navigation-page main-navigation__page hidden"><div class="main-navigation__item main-navigation__item--mandatory js-navigation-tab" data-navigation-tab="StyleEditStyleEditBarComponent" data-text-track="Style Edit" style="float: left;">
@@ -2688,6 +2690,10 @@ d;c.pCfg=ha;c.pCSAA=y;c.cFHFAU=ka;c.sCD=la;c.bcv=z;c.ncv=function(a){var b=t(J(a
             </div>
     </div>
 
+
+
+     
+
     <!-- Start Photoslurp Embed Code -->
 
                     <div class="heading-carousel-home" style="margin-top: 64px">
@@ -2698,42 +2704,52 @@ d;c.pCfg=ha;c.pCSAA=y;c.cFHFAU=ka;c.sCD=la;c.bcv=z;c.ncv=function(a){var b=t(J(a
                         </div>
                     </div>
 
-                    <div id="swarovski-carousel-home" class="ps-container">
-                                                
-                                                <script data-type="photoslurp">
-                                                    if(!photoSlurpWidgetSettings) {
-                                                        var photoSlurpWidgetSettings = {};
-                                                    }
+                    
+                                
+                                    <div id="swarovski-gallery-home" class="ps-container">
+                                        
+                                      <script data-type="photoslurp">
+                                          if (!photoSlurpWidgetSettings) {
+                                              var photoSlurpWidgetSettings = {};
+                                          }
+                              
+                                          (function () {
+                                              photoSlurpWidgetSettings['swarovski-gallery-home'] = {
+                                                  widgetId: 'gallery-home',
+                                                  widgetType: 'gallery',
+                                                  albumId: 1251,
+                                                  theme: 'modern',
+                                                  lang: 'en',
+                                                  pageType: 'home',
+                                                  pageLimit: 9,  
+                                                  autoscrollLimit: 1, 
+                                                  ctaButton: 'Buy',
+                                                  visibleProducts: 2,  
+                                                  thumbOverlay: true,
+                                                  showSubmit: true,
+                                                  submitText: 'Upload your own',
+                                                  debug: true
+                                              };
+                                              var script = document.createElement('script');
+                                              script.async = true;
+                                              script.src = '//static.photoslurp.com/widget/v3/widget_loader.js';
+                                              var entry = document.getElementsByTagName('script')[0];
+                                              entry.parentNode.insertBefore(script, entry);
+                                          })();
+                                      </script>
+                                      
+                                    </div>
+                                <!-- End Photoslurp Embed Code -->
+                                 <script>
+                var psContainer = document.querySelector('#swarovski-gallery-home');
+                psContainer.addEventListener('widget_click', function(e) {
+                    e.stopImmediatePropagation();
+                    window.location = 'http:/demo.photoslurp.com/swarovski/lookbook.html';
+                }); 
+                </script>
 
-                                                    (function() {
-                                                        photoSlurpWidgetSettings['swarovski-carousel-home'] = {
-                                                            widgetId: 'product',
-                                                            widgetType: 'circular',
-                                                            albumId: 1251,
-                                                            theme: 'modern',
-                                                            lang: 'en', 
-                                                            pageLimit: 16,
-                                                            thumbOverlay: true,
-                                                            shopThisLookText: 'Shop it now',
-                                                            ctaButton: 'Buy',
-                                                            visibleProducts: 2, 
-                                                            showSubmit: true,
-                                                            submitText: 'Upload your own',
-                                                            debug: true
-                                                        };
-                                                        var script = document.createElement('script');
-                                                        script.async = true;
-                                                        script.src = '//static.photoslurp.com/widget/v3/widget_loader.js';
-                                                        var entry = document.getElementsByTagName('script')[0];
-                                                        entry.parentNode.insertBefore(script, entry);
-                                                    })();
-                                                </script>
 
-
-                        </div>
-
-
-                                <!-- Start Photoslurp Embed Code -->   
+                              
 
 
     <div class="container">
